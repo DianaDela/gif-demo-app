@@ -1,7 +1,9 @@
 import { useState } from "react"
 import Categories from "./components/Categories"
+import GifsExpo from "./components/GifsExpo"
+
 function App(){ 
-const [categories, setCategories]= useState(["Dragon ball", "One Piece"])
+const [categories, setCategories] = useState(["Dragon ball", "One Piece"])
 
 return(
   <div className="ms-5 mt-5 me-5">
@@ -11,6 +13,8 @@ return(
   categories={categories}
   setCategories={setCategories}
   />
+  <hr/>
+  
   <hr />
   </div>
 )
